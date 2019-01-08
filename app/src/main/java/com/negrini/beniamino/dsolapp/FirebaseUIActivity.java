@@ -29,7 +29,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.firebase.ui.auth.AuthUI;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static android.Manifest.permission.READ_CONTACTS;
@@ -39,6 +42,7 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class FirebaseUIActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
+    private static final int RC_SIGN_IN = 123;
     /**
      * Id to identity READ_CONTACTS permission request.
      */
@@ -66,6 +70,27 @@ public class FirebaseUIActivity extends AppCompatActivity implements LoaderCallb
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase_ui);
+    }
+
+    public void createSignInIntent () {
+        // [START auth_fui_create_intent]
+        // Choose authentication providers
+        List<AuthUI.IdpConfig> providers = Arrays.asList(
+                new AuthUI.IdpConfig.EmailBuilder().build(),
+                new AuthUI.IdpConfig.PhoneBuilder().build(),
+                new AuthUI.IdpConfig.GoogleBuilder().build(),
+                new AuthUI.IdpConfig.FacebookBuilder().build(),
+                new AuthUI.IdpConfig.TwitterBuilder().build());
+
+        // Create nd launch sign-in intent
+        startActivityForResult(
+                AuthUI.getInstance()
+                    .createSignInIntentBuilder()
+                    .setAvailableProviders(providers)
+                    .build(),
+                RC_SIGN_IN);
+        );
+// [END auth_fui_create_intent]
     }
 
     private void populateAutoComplete() {
