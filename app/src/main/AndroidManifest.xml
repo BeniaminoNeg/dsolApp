@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".FirebaseUIActivity"
             android:label="@string/title_activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +24,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".Home"></activity>
-        <activity
-            android:name=".FirebaseUIActivity"
-            android:label="@string/title_activity_firebase_ui"></activity>
     </application>
 
 </manifest>
