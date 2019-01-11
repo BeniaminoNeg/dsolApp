@@ -23,32 +23,7 @@
     <string name="title_activity_firebase_ui">Sign in</string>
     <string name="sign_in_start">sign_in_start</string>
     <string name="launch_title">launch_title</string>
-    <string name="sign_in_silent">sign_in_silent</string>
-    <string name="providers_header">providers_header</string>
-    <string name="providers_google">providers_google</string>
-    <string name="providers_facebook">providers_facebook</string>
-    <string name="providers_twitter">providers_twitter</string>
-    <string name="providers_github">providers_github</string>
-    <string name="providers_email">providers_email</string>
-    <string name="providers_email_link">providers_email_link</string>
-    <string name="providers_phone">providers_phone</string>
-    <string name="providers_anonymous">providers_anonymous</string>
-    <string name="layout_header">layout_header</string>
-    <string name="layout_default">layout_default</string>
-    <string name="layout_custom">layout_custom</string>
-    <string name="theme_header">theme_header</string>
-    <string name="theme_purple">theme_purple</string>
-    <string name="theme_default">theme_default</string>
-    <string name="theme_green">theme_green</string>
-    <string name="theme_dark">theme_dark</string>
-    <string name="logo_header">logo_header</string>
-    <string name="logo_firebase">logo_firebase</string>
-    <string name="logo_google">logo_google</string>
-    <string name="logo_none">logo_none</string>
-    <string name="tos_pp_header">tos_pp_header</string>
-    <string name="tos_pp_google">tos_pp_google</string>
-    <string name="tos_pp_firebase">tos_pp_firebase</string>
-    <string name="tos_pp_none">tos_pp_none</string>
+
 
 
 </resources>

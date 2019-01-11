@@ -50,11 +50,7 @@ public class FirebaseUIActivity extends AppCompatActivity  {
 
     private static final int RC_SIGN_IN = 123;
 
-    // UI references.
-    private AutoCompleteTextView mEmailView;
-    private EditText mPasswordView;
-    private View mProgressView;
-    private View mLoginFormView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
