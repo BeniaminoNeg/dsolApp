@@ -56,6 +56,8 @@ public class FirebaseUIActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase_ui);
+
+        createSignInIntent();
     }
 
     public void createSignInIntent () {
@@ -68,12 +70,12 @@ public class FirebaseUIActivity extends AppCompatActivity  {
                 new AuthUI.IdpConfig.FacebookBuilder().build(),
                 new AuthUI.IdpConfig.TwitterBuilder().build());
 
-        // Create nd launch sign-in intent
+        // Create and launch sign-in intent
         startActivityForResult(
                 AuthUI.getInstance()
-                    .createSignInIntentBuilder()
-                    .setAvailableProviders(providers)
-                    .build(),
+                        .createSignInIntentBuilder()
+                        .setAvailableProviders(providers)
+                        .build(),
                 RC_SIGN_IN);
 // [END auth_fui_create_intent]
     }
