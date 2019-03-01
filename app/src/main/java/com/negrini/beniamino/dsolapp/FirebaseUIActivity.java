@@ -69,7 +69,7 @@ public class FirebaseUIActivity extends AppCompatActivity  {
                 new AuthUI.IdpConfig.GoogleBuilder().build(),
                 new AuthUI.IdpConfig.FacebookBuilder().build(),
                 new AuthUI.IdpConfig.TwitterBuilder().build());
-
+        // valerio è tosto
         // Create and launch sign-in intent
         startActivityForResult(
                 AuthUI.getInstance()
