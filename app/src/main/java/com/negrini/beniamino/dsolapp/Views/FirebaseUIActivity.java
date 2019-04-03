@@ -1,4 +1,4 @@
-package com.negrini.beniamino.dsolapp;
+package com.negrini.beniamino.dsolapp.Views;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -36,6 +36,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.negrini.beniamino.dsolapp.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
